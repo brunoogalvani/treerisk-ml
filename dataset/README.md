@@ -1,0 +1,1 @@
+# Pasta para imagens de árvores saudáveis e em risco de queda
