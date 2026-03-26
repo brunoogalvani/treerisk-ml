@@ -120,7 +120,7 @@ if __name__ == "__main__":
     input_dir = Path(input_str) if input_str else Path ("dataset/raw")
 
     if not input_dir.exists():
-        print(f"ERRO: Pasta '{input_dir}'não encontrada")
+        print(f"ERRO: Pasta: '{input_dir}'não encontrada")
         sys.exit(1)
 
 
@@ -131,7 +131,7 @@ if __name__ == "__main__":
 
 
         #prefixo das imagens
-    prefix = input("Prefixo dos arquivos (padrão: tree): ").strip()
+    prefix = input("Prefixo dos arquivos: (padrão: tree): ").strip()
     if not prefix:
         prefix = "tree"
 
@@ -146,9 +146,9 @@ if __name__ == "__main__":
 
     print(f"\nConfiguraçao: ")
     print(f"Entrada: {input_dir}")
-    print(f"Saida {output_dir}")
-    print(f"Prefixo {prefix}")
-    print(f"Formato {fmt}")
+    print(f"Saida: {output_dir}")
+    print(f"Prefixo: {prefix}")
+    print(f"Formato: {fmt}")
 
 
     confirma = input("\nContinuar? [s/n]: ").strip().lower()
