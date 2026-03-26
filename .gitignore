@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+venv/
+.venv/
+env/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Modelos treinados 
+models/*.pt
+models/*.pth
+models/*.onnx
+models/*.h5
+models/*.pkl
+models/*.tflite
+models/*.weights
+models/*.safetensors
+!models/.gitkeep
+
+# Logs de treinamento
+runs/
+logs/
+wandb/
+mlruns/
+lightning_logs/
+*.log
+
+# Relatórios gerados
+report.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Env
+.env
+.env.local
+.env.production
