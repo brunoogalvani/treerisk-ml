@@ -8,5 +8,5 @@ renomeia sequencialmente e remove duplicatas.
 ```bash
 pip install Pillow
 
-python scripts/format_dataset.py -i data/raw -o data/processed
+Para utilizar basta iniciar o script e seguir os no terminal.
 ```
