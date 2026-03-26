@@ -1,4 +1,3 @@
-import argparse
 import sys
 import hashlib
 from pathlib import Path
@@ -51,12 +50,8 @@ def processar_imagens(input_dir, output_dir, prefix, fmt):
     Converte em um formato padrao, renomeia e remove imagens duplicadas
     """
     images = pegar_imagens(input_dir)
-    print(f"\nEncontradas: {len(images)}imagens")
+    print(f"\nEncontradas: {len(images)} imagens")
 
-    if not images:
-        print("Nenhuma imagem encontrada")
-        return
-    
     if not images:
         print("Nenhuma imagem encontrada")
         return
@@ -98,7 +93,7 @@ def processar_imagens(input_dir, output_dir, prefix, fmt):
 
         except Exception as e:
             print(f"Erro em {img_path.name}: {e}")
-            erros += 1
+            errors += 1
 
 
 
@@ -120,7 +115,7 @@ if __name__ == "__main__":
     input_dir = Path(input_str) if input_str else Path ("dataset/raw")
 
     if not input_dir.exists():
-        print(f"ERRO: Pasta '{input_dir}'não encontrada")
+        print(f"ERRO: Pasta '{input_dir}' não encontrada")
         sys.exit(1)
 
 

@@ -1,3 +1,3 @@
 ## DATASET/LABELS 
 
-## Anotações correspondentes às imagens de `data/processed/`. 
+## Anotações correspondentes às imagens de `dataset/processed/`. 
